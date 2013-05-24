@@ -1,0 +1,37 @@
+/**************************************************************************************
+ * Copyright (C) 2008 EsperTech, Inc. All rights reserved.                            *
+ * http://esper.codehaus.org                                                          *
+ * http://www.espertech.com                                                           *
+ * ---------------------------------------------------------------------------------- *
+ * The software in this package is published under the terms of the GPL license       *
+ * a copy of which has been included with this distribution in the license.txt file.  *
+ **************************************************************************************/
+package com.espertech.esper.epl.agg.aggregator;
+
+import com.espertech.esper.epl.agg.service.AggregatorUtil;
+
+/**
+ * Standard deviation always generates double-typed numbers.
+ */
+public class AggregatorStddevFilter extends AggregatorStddev
+{
+    @Override
+    public void enter(Object parameters)
+    {
+        Object[] paramArray = (Object[]) parameters;
+        if (!AggregatorUtil.checkFilter(paramArray)) {
+            return;
+        }
+        super.enter(paramArray[0]);
+    }
+
+    @Override
+    public void leave(Object parameters)
+    {
+        Object[] paramArray = (Object[]) parameters;
+        if (!AggregatorUtil.checkFilter(paramArray)) {
+            return;
+        }
+        super.leave(paramArray[0]);
+    }
+}
