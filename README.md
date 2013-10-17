@@ -17,4 +17,7 @@ We have resolved these dependencies by utilizing packages from the OpenJDK proje
 existing JavaBeans classes to fit within our context without the need for java.awt.*
 
 This version is based upon Esper 4.9.0, released in Mars 2013. 
-Visit http://esper.codehaus.org for more information. 
+Visit http://esper.codehaus.org for more information.
+
+Licensed under The GNU General Public License (GPL-2.0)
+http://opensource.org/licenses/gpl-2.0.php
