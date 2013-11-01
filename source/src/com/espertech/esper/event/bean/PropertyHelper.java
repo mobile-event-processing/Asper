@@ -19,7 +19,6 @@ import com.espertech.esper.event.WriteablePropertyDescriptor;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import java.beans.*;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
 import java.util.*;
