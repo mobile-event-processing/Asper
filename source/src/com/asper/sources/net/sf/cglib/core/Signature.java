@@ -21,7 +21,8 @@ import com.asper.sources.org.objectweb.asm.Type;
  * A representation of a method signature, containing the method name,
  * return type, and parameter types.
  */
-public class Signature {
+public class Signature
+{
     private String name;
     private String desc;
 
