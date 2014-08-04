@@ -16,7 +16,7 @@ dependency restrictions from missing java packages and classes in Android.
 We have resolved these dependencies by utilizing packages from the OpenJDK project and by modifying
 existing JavaBeans classes to fit within our context without the need for java.awt.*
 
-This version is based upon Esper 4.9.0, released in March, 2013. 
+This version is based upon Esper 4.8.0, released in March, 2013. 
 Visit http://esper.codehaus.org for more information.
 
 Licensed under The GNU General Public License (GPL-2.0)
